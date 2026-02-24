@@ -1,9 +1,9 @@
 /* Modern CSS Variables for consistent theming */
 :root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
+  --primary-color: #10b981;
+  --primary-hover: #059669;
   --secondary-color: #64748b;
-  --accent-color: #0ea5e9;
+  --accent-color: #34d399;
   --text-primary: #1e293b;
   --text-secondary: #64748b;
   --text-light: #94a3b8;
@@ -15,9 +15,9 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-  --gradient-subtle: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --gradient-primary: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  --gradient-accent: linear-gradient(135deg, #86efac 0%, #34d399 100%);
+  --gradient-subtle: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
   --border-radius: 12px;
   --border-radius-lg: 16px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -106,10 +106,28 @@ body {
 .teaser .hero-body {
   padding-top: 2rem;
   padding-bottom: 4rem;
+  text-align: center;
 }
 
 .teaser {
   font-family: 'Inter', sans-serif;
+}
+
+.teaser-media {
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
+}
+
+.teaser-media img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.teaser-text {
+  margin-top: 2rem;
 }
 
 
@@ -255,24 +273,32 @@ body {
 
 .results-carousel {
   overflow: hidden;
+  padding: 0.5rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
   padding: 1rem 0;
 }
 
 .results-carousel .item {
-  margin: 1rem;
+  margin: 0 !important;
   overflow: hidden;
-  padding: 1.5rem;
+  padding: 0;
   font-size: 0;
-  background: var(--background-primary);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
   transition: var(--transition);
-  border: 1px solid var(--border-color);
+  border: none;
 }
 
 .results-carousel .item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  transform: none;
+  box-shadow: none;
 }
 
 .results-carousel .item img,
