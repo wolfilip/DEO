@@ -328,7 +328,7 @@
 <!-- End third image -->
 
 <!-- Fourth image -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h2 class="title is-3">Strong Performance</h2>
@@ -341,16 +341,70 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End fourth image -->
 
-<!-- Qualitative results -->
+<!-- Quantitative results -->
 <section class="hero is-small has-background-white-ter">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Strong Performance</h2>
+      <div class="carousel-wrapper">
+        <div id="quantitative-carousel" class="carousel quantitative-carousel">
+          <div class="item">
+            <img src="static/images/segmentation_performance_transparent.png" alt="Crop segmentation qualitative result" style="width: 100%; height: auto; max-height: 500px; display: block; margin: 0 auto; object-fit: contain;" loading="lazy"/>
+          </div>
+
+          <div class="item">
+            <div class="columns is-gapless">
+              <div class="column">
+                <img src="static/images/cd_performance.png" alt="Flood segmentation qualitative result" style="max-width: 85%; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="columns is-gapless">
+              <div class="column">
+                <img src="static/images/classification_performance.png" alt="Segmentation and Change Detection qualitative result" style="max-width: 85%; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="columns is-gapless">
+              <div class="column">
+                <img src="static/images/low_data_performance.png" alt="Building segmentation qualitative result" style="max-width: 85%; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="columns is-gapless">
+              <div class="column">
+                <img src="static/images/rank.png" alt="Building segmentation qualitative result" style="max-width: 85%; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container has-text-centered">
+      <p style="margin-top: 2rem;">
+        <b>DEO achieves state-of-the-art performance across a range of optical and multispectral benchmarks</b>, notably on semantic segmentation tasks, with an average improvement of 3.64 percentage points over the best competing method. It further achieves an improvement of 1.21 points on change detection, and 1.31 points on classification tasks. It also achieves competitive results in low-data environments. Finally, we present the overall rank of methods on evaluated datasets, where DEO again places first.
+      </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End quantitative results -->
+
+<!-- Qualitative results -->
+<section class="hero is-small teaser">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Qualitative Results</h2>
       <div class="carousel-wrapper">
-        <div id="results-carousel" class="carousel results-carousel">
+        <div id="qualitative-carousel" class="carousel qualitative-carousel">
           <div class="item">
             <img src="static/images/qual_crop/ac1aec9e-1.png" alt="Crop segmentation qualitative result" style="max-width: 85%; height: auto; display: block; margin: 0 auto;" loading="lazy"/>
           </div>
